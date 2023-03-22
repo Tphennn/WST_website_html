@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e649af;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+
+}
+
+nav
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 7px 0 rgba(0,0, 0,0.1);
+
+
+
+}
+.logo
+{
+    margin-left: 50px;
+    width: 70px;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+    display: flex;
+}
+nav ul li
+{
+    
+    
+    list-style: none;
+    margin: 10px 15px;
+    transition: 0.5s;
+
+
+
+}
+nav ul li a
+{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: aliceblue;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+nav ul li:hover a
+{
+    background-color: rgb(202, 107, 183);
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s
+    
+
+}
+
+
+.content
+{
+    position: relative;
+    top: 150px;
+
+    margin-left: 150px;
+    max-width: 400px;
+    
+  
+}
+.content h1
+{
+    font-size: 50px;
+    color: rgb(73, 42, 61);
+
+}
+
+.content p 
+{
+    margin: 5px 0 0 0;
+    color: rgb(11, 11, 11);
+
+}
+
+
+
+
+.box
+{
+    top: 55%;
+    left: 18%;
+    width: 220px;
+    height: 300px;
+    background: #fff; 
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    margin-left: 750px;
+    box-shadow: inset 300px 0 50px rgba(0,0, 0,.5), 0 20px 100px rgba(0,0, 0,.5);
+    transition: 1s;
+}
+
+.box:hover
+
+{
+    transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0, 0,.5), 0 10px 100px rgba(0,0, 0,.5);
+
+}
+
+.box:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #c762a4;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+
+}
+.box:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #c762a4;
+    transform-origin: left;
+    transform: skewY(-45deg);
+
+}
+
+.box .box-img
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+}
+
+
+.box:hover .box-img
+{
+    transform: rotateY(-135deg);
+    
+}
+
+
+.box-img img
+{
+    
+    width: 220px;
+    height: 300px;
+    
+    
+}
+
+.box .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+}
+
+
+
+/*Picture ni diri*/
+
+.pic-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 10px 20px;
+
+}
+.pic-container .pic-heading
+{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.pic-container .pic-heading h3
+{
+    color: #480a3f;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #480a3f;
+
+}
+.pic-container .pic-heading h3 span
+{
+    font-weight: 100;
+    
+}
+.pic-container .box-pic
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.pic-container .box-pic .first
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.pic-container .box-pic .first img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.pic-container .btn-pic
+{
+    margin: 40px 0 70px 0;
+    background: #480a3f;
+    padding: 15px 40px;
+    border-radius: 5px;
+
+}
+.pic-container .btn-pic a
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+
+}
+
+/* More ni siya*/
+.pic-container-more
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 10px 20px;
+
+}
+.pic-container-more .pic-heading-more
+{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.pic-container-more .pic-heading-more h3
+{
+    color: #480a3f;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #480a3f;
+
+}
+.pic-container-more .pic-heading-more h3 span
+{
+    font-weight: 100;
+    
+}
+.pic-container-more .box-pic-more
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.pic-container-more .box-pic-more .first-more
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.pic-container-more .box-pic-more .first-more img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.pic-container-more .btn-pic-more
+{
+    margin: 40px 0 70px 0;
+    background: #480a3f;
+    padding: 15px 40px;
+    border-radius: 5px;
+
+}
+.pic-container-more .btn-pic-more a
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+
+}
+
+
+
+.mssg-section
+{
+    width: 100%;
+}
+
+.mssg-section .mssg-wrap
+{
+    padding-top: 10px;
+}
+
+.mssg-section .mssg-wrap .mssg-pic
+{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.mssg-section .mssg-wrap .mssg-pic .mssgg-box
+{
+    width: 100%;
+    position: relative;
+
+}
+.mssg-section .mssg-wrap .mssg-pic .mssgg-box .mssgg-pic
+{
+    width: 100%;
+
+}
+.mssg-section .mssg-wrap .mssg-pic .mssgg-box .mssgg-pic img
+{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: block;
+}
+.mssg-section .mssg-wrap .mssg-pic .mssgg-box .bbverse
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0,0, 0,0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.30s;
+
+}
+.mssg-section .mssg-wrap .mssg-pic .mssgg-box .bbverse:hover
+{
+    opacity: 1;
+}
